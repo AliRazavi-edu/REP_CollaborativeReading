@@ -1,2 +1,2 @@
-# PRJ_CollaborativeReading
-Collaborative Reading Project
+# REP_CollaborativeReading
+Collaborative Reading Repository

@@ -19,11 +19,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         body {
-            margin-bottom: 5%;
+            direction: rtl;
+            background: rgb(231, 240, 243);
         }
         
         .myBox {
-            border: none;
+            border: 1px solid rgb(190, 190, 233);
             padding: 18px;
             font: 20px sans-serif;
             width: 100%;
@@ -44,7 +45,6 @@
             font-size: 15px;
         }
         
-        .active,
         .collapsible:hover {
             background-color: rgb(45, 52, 73);
         }
@@ -60,7 +60,8 @@
 
 </head>
 
-<body style="direction: rtl; background: rgb(231, 240, 243); ">
+<body>
+
 
     <div class="jumbotron text-center text-white" style="margin-bottom:0; background-image: url(coll.jpg); height: 200px;">
 
@@ -104,7 +105,7 @@
         </div>
     </nav>
 
-    <div class="container">
+    <div class="container" style="margin-bottom: 20px;">
         <div class="row">
             <div class="col-md-6">
                 <div class="card" style="margin-top: 20px;">
@@ -167,7 +168,7 @@
 
                     </div>
                     <hr>
-                    <div class="w3-container w3-card w3-white w3-round w3-margin " style="text-align:right;"><br>
+                    <div class="w3-container w3-card w3-white w3-round w3-margin text-right "><br>
                         <img src="images.png" class="img-thumbnail" alt="Cinque Terre" height="100px" width="100px">
                         <span class="w3-right w3-opacity">نام کاربر </span>
                         <span class="w3-right w3-opacity">17 دیماه </span>
@@ -179,25 +180,25 @@
                 </div>
             </div>
         </center>
-        <script>
-            var coll = document.getElementsByClassName("collapsible");
-            var i;
-
-            for (i = 0; i < coll.length; i++) {
-                coll[i].addEventListener("click", function() {
-                    this.classList.toggle("active");
-                    var content = this.nextElementSibling;
-                    if (content.style.maxHeight) {
-                        content.style.maxHeight = null;
-                    } else {
-                        content.style.maxHeight = content.scrollHeight + "px";
-                    }
-                });
-            }
-        </script>
     </div>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
 
-    <div class="jumbotron text-right text-white" style="margin-bottom:0;background: rgb(40, 55, 66)">
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+
+    <div class="jumbotron text-right text-white" style="margin-bottom:0;background: rgb(40, 55, 66);">
         <h4>تماس با ما </h4>
         <p>
             <ul class="contact1">
@@ -212,6 +213,7 @@
             </ul>
         </p>
     </div>
+
 
 </body>
 

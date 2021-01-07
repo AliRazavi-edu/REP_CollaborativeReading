@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>collaborative Reading</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body style="direction: rtl; background: rgb(231, 240, 243);">
+
+    <div class="jumbotron text-center text-white" style="margin-bottom:0; background-image: url(coll.jpg); height: 200px;">
+
+    </div>
+
+    <nav class="navbar navbar-expand-sm badge-dark navbar-dark ">
+        <a class="navbar-brand" href="index.html">صفحه اصلی</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+
+            </ul>
+        </div>
+
+    </nav>
+
+
+
+    <div class="container" style="padding: 30px; width: 550px; margin-top: 50px;margin-bottom: 50px; text-align: right;">
+        <h2 style="color: blue;">ورود به سایت</h2>
+        <p></p>
+        <form action="App.html" class="needs-validation" novalidate>
+            <div class="form-group">
+                <label for="uname">شماره دانشجویی :</label>
+                <input type="text" class="form-control" id="uname" placeholder="شماره دانشجویی را وارد کنید" name="uname" required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+            <div class="form-group">
+                <label for="pwd">کد ملی :</label>
+                <input type="password" class="form-control" id="pwd" placeholder="کد ملی را وارد کنید " name="pswd" required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="remember" required> به خاطر سپردن
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Check this checkbox to continue.</div>
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary" style="margin-left: 20px;width:100%;">ورود</button>
+
+        </form>
+    </div>
+
+    <script>
+        // Disable form submissions if there are invalid fields
+        (function() {
+            ' use strict ';
+            window.addEventListener('load ', function() {
+                // Get the forms we want to add validation styles to
+                var forms = document.getElementsByClassName('needs-validation ');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                    form.addEventListener('submit ', function(event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated ');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
+
+    <div class="jumbotron text-right text-white" style="margin-bottom:0;background: rgb(40, 55, 66)">
+        <h4>تماس با ما </h4>
+        <p>
+            <ul class="contact1">
+                <li>
+                    ایمیل : example@gmail.com
+                </li>
+
+                <li>
+                    تلفن : 22222222
+                </li>
+                <li>نوشته مربوط به قانون کپی رایت 2030 ( این وب سایت یک پروژه دانشگاهی است )</li>
+            </ul>
+        </p>
+    </div>
+
+</body>
+
+</html>

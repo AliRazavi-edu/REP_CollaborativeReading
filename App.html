@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <script type="text/javascript">
+        // Popup window code
+        function newPopup(url) {
+            popupWindow = window.open(url, 'popUpWindow', 'height=500,width=350,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
+        }
+    </script>
+    <title>collaborative Reading</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            margin-bottom: 5%;
+        }
+        
+        .myBox {
+            border: none;
+            padding: 18px;
+            font: 20px sans-serif;
+            width: 100%;
+            height: auto;
+            background-color: #ffffff;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        
+        <! --collaborative -->.collapsible {
+            color: white;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+        }
+        
+        .active,
+        .collapsible:hover {
+            background-color: rgb(45, 52, 73);
+        }
+        
+        .content {
+            padding: 0 18px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            background-color: #ffffff;
+        }
+    </style>
+
+</head>
+
+<body style="direction: rtl; background: rgb(231, 240, 243); ">
+
+    <div class="jumbotron text-center text-white" style="margin-bottom:0; background-image: url(coll.jpg); height: 200px;">
+
+    </div>
+
+    <nav class="navbar navbar-expand-sm badge-dark navbar-dark ">
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item ">
+                    <p class="nav-link">آمار لایک:</p>
+                </li>
+                <li class="nav-item ">
+                    <p class="nav-link">آمار ترجمه :</p>
+                </li>
+                <li class="nav-item ">
+                    <p class="nav-link">تعداد اعضای سایت :</p>
+                </li>
+            </ul>
+        </div>
+        <div class="collapse navbar-collapse" style="float: left; direction: ltr;">
+            <ul class="navbar-nav" style="margin-left: 20px; margin-right: 20px;">
+                <li class="nav-item ">
+
+                    <div class="dropdown dropright">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" style="background:rgb(40, 55, 66) ;border:rgb(40, 55, 66) solid 1px ;">
+                         کاربر
+                        </button>
+                        <div class="dropdown-menu text-right" style="height: 150px; width: 250px;padding-right: 10px;">
+                            <p class="card-text">نام کاربر </p>
+                            <p class="card-text">شماره دانشجویی </p>
+                            <a href="login.html" class="btn btn-primary">خروج</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item ">
+
+                    <img src="images.png" class="rounded-circle" alt="Cinque Terre" width="64" height="46">
+
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card" style="margin-top: 20px;">
+                    <div class="card-header text-right text-white" style="background:rgb(107, 131, 148)">
+                        ترجمه
+                    </div>
+                    <div class="card-body text-right">
+                        فراخوانی عملکرد هنگامی که "چیزی" عملکرد را فراخوانی (فراخوانی) می کند ، کد درون تابع اجرا می شود: هنگامی که یک رویداد رخ می دهد (هنگامی که کاربر یک دکمه را کلیک می کند) وقتی از کد JavaScript فراخوانی می شود (فراخوانی می شود) به طور خودکار (خود فراخوانی)
+                        بعداً در این آموزش با چیزهای بیشتری در مورد فراخوانی عملکرد آشنا خواهید شد.
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="card" style="margin-top: 20px;">
+                    <div class="card-header text-right text-white" style="background: rgb(107, 131, 148)">
+                        متن اصلی
+                    </div>
+                    <div class="card-body text-left">Function Invocation The code inside the function will execute when "something" invokes (calls) the function: When an event occurs (when a user clicks a button) When it is invoked (called) from JavaScript code Automatically (self invoked)
+                        You will learn a lot more about function invocation later in this tutorial.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="form-group">
+                    <div class="text-right">
+                        <h5>ترجمه جدید</h5>
+                    </div>
+                    <textarea class="form-control" rows="5" id="comment"></textarea>
+                    <button type="button" class="btn btn-success" style="margin-top: 10px; width: 100px;">ذخیره</button>
+                </div>
+            </div>
+        </div>
+
+        <center>
+            <h3>لیست ترجمه ها</h3>
+            <div class="myBox text-right">
+                <div class="w3-container w3-card w3-white w3-round w3-margin " style="text-align:right;"><br>
+                    <img src="images.png" class="img-thumbnail" alt="Cinque Terre" height="100px" width="100px">
+                    <span class="w3-right w3-opacity">نام کاربر </span>
+                    <span class="w3-right w3-opacity">17 دیماه </span>
+                    <br>
+                    <span>ترجمه مربوط به کاربر</span>
+                    <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom" style="float: left;"><i class="fa fa-thumbs-up"></i>  Like</button>
+
+                </div>
+                <hr>
+                <! -- قسمت بیشتر شده -->
+                <button class="collapsible " style="width:20%;margin-right: 40%;">بیشتر</button>
+                <div class="content">
+                    <div class="w3-container w3-card w3-white w3-round w3-margin " style="text-align:right;"><br>
+                        <img src="images.png" class="img-thumbnail" alt="Cinque Terre" height="100px" width="100px">
+                        <span class="w3-right w3-opacity">نام کاربر </span>
+                        <span class="w3-right w3-opacity">17 دیماه </span>
+                        <br>
+                        <span>ترجمه مربوط به کاربر</span>
+                        <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom" style="float: left;"><i class="fa fa-thumbs-up"></i>  Like</button>
+
+                    </div>
+                    <hr>
+                    <div class="w3-container w3-card w3-white w3-round w3-margin " style="text-align:right;"><br>
+                        <img src="images.png" class="img-thumbnail" alt="Cinque Terre" height="100px" width="100px">
+                        <span class="w3-right w3-opacity">نام کاربر </span>
+                        <span class="w3-right w3-opacity">17 دیماه </span>
+                        <br>
+                        <span>ترجمه مربوط به کاربر</span>
+                        <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom" style="float: left;"><i class="fa fa-thumbs-up"></i>  Like</button>
+
+                    </div>
+                </div>
+            </div>
+        </center>
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.maxHeight) {
+                        content.style.maxHeight = null;
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + "px";
+                    }
+                });
+            }
+        </script>
+    </div>
+
+    <div class="jumbotron text-right text-white" style="margin-bottom:0;background: rgb(40, 55, 66)">
+        <h4>تماس با ما </h4>
+        <p>
+            <ul class="contact1">
+                <li>
+                    ایمیل : example@gmail.com
+                </li>
+
+                <li>
+                    تلفن : 22222222
+                </li>
+                <li>نوشته مربوط به قانون کپی رایت 2030 ( این وب سایت یک پروژه دانشگاهی است )</li>
+            </ul>
+        </p>
+    </div>
+
+</body>
+
+</html>

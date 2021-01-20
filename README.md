@@ -12,6 +12,6 @@ Collaborative Reading Repository
 
 - [Demo](http://kharazmsoft.com/login)
 
-[طرح دستی](https://alirazavi-edu.github.io/REP_CollaborativeReading/prototype.pdf)
+- [طرح دستی](https://alirazavi-edu.github.io/REP_CollaborativeReading/prototype.pdf)
 
 </div>
